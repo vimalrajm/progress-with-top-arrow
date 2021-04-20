@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    position: relative;
+}
+
+.progress1, .progress2, .progress3 {
+    width: 300px;
+    height: 50px;
+    background: yellow;
+    cursor: pointer;
+}
+
+.progress1 {
+    background: green;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.progress2 {
+    margin: 0 2px;
+}
+
+.progress3 {
+    background: blue;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.arrow {
+    position: absolute;
+    border: 15px solid transparent;
+    border-top: 15px solid red;
+    top: -15px;
+    left: 0px;
+}
+
+.arrow {
+    transition: 2s ease-in-out;
+}
